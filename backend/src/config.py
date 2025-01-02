@@ -13,7 +13,7 @@ logger.warning(f"basedir: {BASE_DIR}")
 
 config = Config(os.path.join(BASE_DIR, ".env"))
 MONGODB_URI = config("MONGODB_URI")
-GREY_AUTH_TOKEN = config("GREY_AUTH_TOKEN")
+GREY_MOBILE_TOKEN = config("GREY_MOBILE_TOKEN")
 
 def datetime_now():
     return datetime.now(tz=pytz.UTC)
